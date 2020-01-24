@@ -13,7 +13,7 @@ import pandas as pd
 @click.option('--sub/--no-sub', default=True, help='enable subtraction questions')
 @click.option('--mul/--no-mul', default=True, help='enable multiplication questions')
 @click.option('--div/--no-div', default=True, help='enable division questions')
-@click.option('--number-range', default=(2, 100), help='range of numbers')
+@click.option('--number-range', default=(2, 100), type=(int, int), help='range of numbers')
 @click.option('--duration', default=120, help='Game Length')
 @click.option('--name', default='data', help='file output name')
 def main(add, sub, mul, div, number_range, duration, name):
